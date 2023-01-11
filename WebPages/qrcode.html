@@ -16,11 +16,15 @@
   <meta name="author" content="Mr.J">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="https://rock1candy.github.io/archives/2023/index.html">
+    <meta name="description" content="var click_Times&#x3D;0;     var code_text&#x3D;[];     var ITEM&#x3D;0;           function demo(str,n){        &#x2F;&#x2F; $(网页容器).qrcode({宽度:值，高度：值，内容：值});        if(1)        {">
+<meta property="og:type" content="website">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="https://rock1candy.github.io/WebPages/qrcode.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="var click_Times&#x3D;0;     var code_text&#x3D;[];     var ITEM&#x3D;0;           function demo(str,n){        &#x2F;&#x2F; $(网页容器).qrcode({宽度:值，高度：值，内容：值});        if(1)        {">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-01-11T11:45:04.171Z">
+<meta property="article:modified_time" content="2022-10-30T02:40:24.428Z">
 <meta property="article:author" content="Mr.J">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -28,7 +32,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Archives - Blog</title>
+  <title>page.title - Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -188,7 +192,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Archives"></span>
+            <span id="subtitle" data-typed-text="page.title"></span>
           
         </div>
 
@@ -215,53 +219,249 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">6 posts in total</p>
-  <hr>
-  
-  
-    
-      
-      <p class="h5">2023</p>
-    
-    <a href="/2023/01/10/%E3%80%90%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%E3%80%91%E8%AF%9D%E8%AF%B4%E5%88%B0%E7%82%B9%E5%AD%90%E4%B8%8A/" class="list-group-item list-group-item-action">
-      <time>01-10</time>
-      <div class="list-group-item-title">【阅读笔记】话说到点子上</div>
-    </a>
-  
-    
-    <a href="/2023/01/09/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%8F%97%E6%AC%A2%E8%BF%8E%E7%9A%84%E4%BA%BA%EF%BC%9F/" class="list-group-item list-group-item-action">
-      <time>01-09</time>
-      <div class="list-group-item-title">【阅读笔记】如何成为一个受欢迎的人？</div>
-    </a>
-  
-    
-    <a href="/2023/01/08/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1%E9%89%B4%E8%B5%8F-2/" class="list-group-item list-group-item-action">
-      <time>01-08</time>
-      <div class="list-group-item-title">平面设计鉴赏[2]</div>
-    </a>
-  
-    
-    <a href="/2023/01/08/23-01-08-1/" class="list-group-item list-group-item-action">
-      <time>01-08</time>
-      <div class="list-group-item-title">【随记】找到自己的生存方式</div>
-    </a>
-  
-    
-    <a href="/2023/01/08/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1%E9%89%B4%E8%B5%8F/" class="list-group-item list-group-item-action">
-      <time>01-08</time>
-      <div class="list-group-item-title">平面设计鉴赏[1]</div>
-    </a>
-  
-    
-    <a href="/2023/01/07/hello-world/" class="list-group-item list-group-item-action">
-      <time>01-07</time>
-      <div class="list-group-item-title">Hello World</div>
-    </a>
-  
-</div>
+<article class="page-content">
+  <!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.qrcode.min.js"></script>
+    <script src="./js/clipboard.js"></script>
+    <script src="./js/canvas-toBlob.js"></script>
 
 
+    <title></title>
+</head>
+<script>
+    var click_Times=0;
+    var code_text=[];
+    var ITEM=0;
+
+    
+    function demo(str,n){
+       // $(网页容器).qrcode({宽度:值，高度：值，内容：值});
+       if(1)
+       {
+           ;
+           add_code_table(str,n);
+            $("#tr"+n).qrcode({wihth:56,height:56,text:str});
+            //把div元素节点添加到body元素节点中成为其子节点，但是放在body的现有子节点的最后
+
+       }
+        click_Times++;
+    }
+
+    function utf16to8(str) {  
+        var out, i, len, c;  
+        out = "";  //创建空变量保存结果
+        len = str.length; //设置传入形参数据长度
+        for(i = 0; i < len; i++) {  
+            c = str.charCodeAt(i);  //返回字符串第一个字符的 Unicode 编码: 
+            if ((c >= 0x0001) && (c <= 0x007F)) {  //判断Unicode 编码范围
+                out += str.charAt(i);  
+            } else if (c > 0x07FF) {  
+                //将 Unicode 编码转为一个字符
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));  
+                out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));  
+                out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));  
+            } else {  
+                //将 Unicode 编码转为一个字符
+                out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));  
+                out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));  
+            }  
+        }  
+        //返回出结果
+        return out;
+    }
+
+    function add_code_table(str,n)
+    {
+        var n1;
+        if(n%3==0) n1=1;
+        if(n%3==1) n1=2;
+        if(n%3==2) n1=3;
+
+        var table=document.createElement("table")
+        var tr1=document.createElement("tr")
+        var tr2=document.createElement("tr")
+
+        tr2.id="tr"+n;
+        tr1.innerHTML=str;
+        tr1.style="height: 10px;";
+        tr2.innerHTML="  ";
+        tr2.style="height: 60px;","font-size:smaller";
+
+        table.border="1"
+        table.style="height: 60px;","font-size:smaller";
+
+        switch(n1){
+        case 1 : table.style="left: 70px; height: 10px; top: 20px;"
+        break; 
+        case 2 : table.style="left: 500px; height: 10px; top: 20px;"
+        break;
+        case 3 : table.style="left: 1000px; height: 10px; top: 20px;"
+        break;
+        }
+
+        table.appendChild(tr1);
+        table.appendChild(tr2);
+        document.body.appendChild(table);
+        click_Times++;
+    }
+
+    function printpage() {
+      let newstr = document.getElementsByTagName("table").innerHTML;
+      let oldstr = document.body.innerHTML;
+      document.body.innerHTML = newstr;
+      window.print();
+      document.body.innerHTML = oldstr;
+      return false;
+    }
+
+    function Code_Genarate()
+    {
+        var i=0;
+        var s1,s2;
+        s1=s2=0;
+        let str1=document.getElementById('dxc_pase_pase').value;
+        if(str1.length>1)
+        {
+            for(let j=0;j<=str1.length;j++)
+            {
+                if(str1.charAt(j)==" "||str1.charAt(j)=="\n"||str1.charAt(j)==",")
+                {
+                    s2=j;
+                    code_text.push(str1.slice(s1,s2));
+                    s1=s2+1;
+                    ITEM++;
+                }
+            }
+        }
+
+        for(i=1;i<=ITEM;i++)
+        {
+            demo(code_text[i-1],i)
+            console.log(ITEM)
+        }
+    }
+
+    function Paste_to_html()
+    {
+            document.getElementById('dxc_pase_pase').addEventListener('paste', function (e) {
+            var clipboardData = e.clipboardData;
+            if (!(clipboardData && clipboardData.items)) {
+                return;
+            }
+            for (var i = 0, len = clipboardData.items.length; i < len; i++) {
+                var item = clipboardData.items[i];
+                if (item.kind === "string" && item.type == "text/plain") {
+                    item.getAsString(function (str) {
+                        alert('我是粘贴的文字：'+str);
+                    })
+                } else if (item.kind === "file") {
+                    var pasteFile = item.getAsFile();
+                    var reader = new FileReader();
+                    reader.readAsDataURL(pasteFile);
+                    reader.onload = function () {
+                        alert('我是粘贴的图片的Base64代码：' + reader.result);
+                    }
+                }
+            }
+        })
+    }
+
+    function Image_save()
+    {
+
+        var imagename;
+        var imag_url
+        for(let i=1;i<=ITEM;i++)
+        {
+            console.log(i)
+            imagename=code_text[i-1]+".jpeg";
+            // 采用data:application/octet-stream ,让浏览器识别为下载，有大小限制，12000*4000无法保存
+            let image =  new  Image();
+            //image.src =  $("#tr" + i).find("canvas")[0].toDataURL({format: 'image/png', quality:1, width:14000, height:4000});
+            //var url = image.src.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+            //window.open(url);
+            
+            var imgURL = $("#tr" + i).find("canvas")[0].toDataURL({format: 'image/png', quality:1, width:14000, height:4000});
+            var dlLink = document.createElement('a');
+            dlLink.download = imagename;
+            dlLink.href = imgURL;
+            dlLink.dataset.downloadurl = [image, dlLink.download, dlLink.href].join(':');
+            document.body.appendChild(dlLink);
+            dlLink.click();
+            document.body.removeChild(dlLink);
+
+            //var strSourFile = "c:\\test.txt";
+            //var strDestFile = "D:\\Barcodes\\"+imagename;
+            //var objFSO = new ActiveXObject("Scripting.FileSystemObject");
+            // 检查文件是否存在
+           // if (objFSO.FileExists(strSourFile)){
+            // 移动文件
+            //var strPath = objFSO.MoveFile(strSourFile, strDestFile);
+            //if (objFSO.FileExists(strDestFile))
+            //document.write("文件已经移动到: " + strDestFile + "<br>");
+            // 复制文件
+            //var strPath = objFSO.CopyFile(strDestFile, strSourFile);
+            //if (objFSO.FileExists(strSourFile))
+            //document.write("文件已经复制到: " + strSourFile + "<br>");
+            // 删除文件
+            //objFSO.DeleteFile(strDestFile, true); 
+            //document.write("文件: " + strDestFile + "已经删除<br>");
+           // }
+           // else
+            //document.write("文件: " + strSourFile + "不存在<br>");
+
+        }
+    }
+
+</script>
+<style>
+
+    #code_position{
+        display: inline-block;
+        justify-content: space-between;
+        width: 1000px;
+    }
+
+
+    
+
+    .p3{
+        position:absolute;
+        width: 60px;
+        height: 1000px;
+        font-size: 30px;
+        
+        left: 700px;
+    }
+
+    table {
+            float: left;
+        }
+
+</style>
+
+<body>
+    <button onclick="Code_Genarate()" >BarCode</button>
+    <button onclick="window.print()" >Print</button>
+    <button onclick="Image_save()" >DownLoad</button>
+
+
+    <div id="code1" class="p1" width="1000" ></div>
+    <div id="code2" class="p2" ></div>
+    <div id="code3" class="p3" ></div>
+    <textarea id="dxc_pase_pase"></textarea>
+    <br>
+
+</body>
+</html>
+
+  
+
+</article>
 
 
 
